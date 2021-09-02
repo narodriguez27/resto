@@ -1,0 +1,42 @@
+ .flex__contact{
+     padding-top: 60px;
+     padding-bottom: 60px;
+     display: flex;
+     justify-content: center;
+ }
+ .flex__contact-form{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     width: 45%;
+     background-color: rgba(0, 0, 0, 0.101);
+     border-radius: 15px;
+     padding: 10px;
+ }
+label{
+    display: block;
+    margin-right: 115px;
+}
+input{
+    padding: 2px;
+    border: none;
+    outline: none;
+}
+button{
+    margin: 10px;
+    padding: 5px 20px;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgba(0, 0, 0, 0.256);
+    border-radius: 10px;
+    border-color: rgba(199, 176, 147, 0.61);
+}
+button:hover{
+    background-color: rgba(0, 0, 0, 0.356);
+}
+textarea{
+    resize: none;
+    border: none;
+    outline: none;
+}
+
