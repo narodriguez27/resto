@@ -57,6 +57,7 @@
     background: #14130434;
     border-radius: 10px;
     border-color: rgba(199, 176, 147, 0.61);
+    transition: 0.3s;
 
 }
 

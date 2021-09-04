@@ -187,8 +187,176 @@ li{
     width: 90%;
 }
 
+@media (min-width:320px) {
 
-@media (max-width: 400px){
+        .nav_main{
+            display: flex;
+            background-color: #ff0000b3;
+            flex-direction: column-reverse;
+            align-items: stretch;
+            height: 500px;
+            width: 50%;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            display: none;
+        }
+        .tenedor{
+            width: 150px;
+            border-radius: 50%;
+            /* border: 1px solid black; */
+            margin: 0 auto;
+            background: #e91e63a8;
+        }
+        img.tenedor{
+            width: 175px;
+            margin-bottom: 40px;
+        }
+        .lupa{
+            display: none;
+        }
+        .nav_main ul {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .nav_main a{
+            font-size: 30px;
+            padding: 0;
+            margin: 0;
+        } 
+        
+        .cabeza {
+            width: 100%;
+            height: 300px;
+            background-image: url(img/s.jpg);
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+            text-shadow: 4px 4px 3px black;
+            border-radius: 50px;
+            margin-top: 15px;
+
+        }
+        header p{
+            display: none;
+        }
+
+        header h2{
+             font-size: 60px;
+            text-transform: uppercase;
+            text-shadow: 4px 4px 3px black;
+            margin: 55px auto;
+        }
+
+        .btn{
+            display: none;
+        }
+
+        .hr-nav{
+            display: none;
+        }
+
+        .cards{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+        img.img-recetas{
+            width: 100%;
+            height: 100%;
+        }
+        .card h2{
+            font-size:20px;
+            text-align: center;
+        }
+        .descripcion{
+            font-size: 20px;
+        }
+
+        .btn-seguir-leyendo {
+            margin-top: auto;
+            margin-left: auto;
+            margin-bottom: 20px;
+            background: #ff0000c9;
+            color: white;
+            padding: 5px 5px;
+            border-radius: 10px;
+        }
+
+        .position{
+            display: none;
+        }
+        .flex_footer {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+           
+        }
+        .flex_footer-social {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            padding: 5px;
+            font-size: 20px;
+            align-items: center;
+        }
+            li {
+                display: flex;
+                flex-direction: column;
+                font-size: 13px;
+                align-items: center;
+            }
+
+           .flex_footer-social a{
+               font-size: 30px;
+           }
+           .logof{
+               width: 50px;
+               height: 50px;
+           }
+           .flex_footer-social p {
+               font-size: 30px;
+           }
+    }
+
+
+     /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+@media (min-width:480px) {
+        body{
+            background-color: red;
+        }
+     /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:600px) {
+        body{
+            background-color: blue;
+        }
+     /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:801px) { 
+        body{
+            background-color: yellow;
+        }
+    /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { 
+        body{
+            background-color: green
+        }
+    /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) {
+        body{
+            background-color: sienna;
+        }
+     /* hi-res laptops and desktops */ }
+
+/* @media (max-width: 400px){
    .cards{
        display: flex;
        flex-wrap: wrap;
@@ -259,4 +427,4 @@ li{
     .btn-seguir-leyendo{
         font-size: 15px;
     }
- }
+ } */
