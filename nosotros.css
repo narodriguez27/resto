@@ -1,0 +1,57 @@
+.titulo-banner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-nosotros{
+    box-shadow: 2px 3px 10px rgb(0 0 0 / 60%);
+}
+
+.titulo-banner-h2,
+.titulo-banner-p{
+    text-align: center;
+    padding: 5px;
+}
+.cards-nosotros-1{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 10px 0;
+    background: rgba(0, 0, 0, 0.119);
+}
+
+.cards-nosotros-2{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    background: rgba(0, 0, 0, 0.119);
+}
+
+.cards-nosotros-3{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 10px 0;
+    background: rgba(0, 0, 0, 0.119);
+}
+.texto{
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   flex-direction: column;
+   word-break:initial;
+}
+
+h3{
+    flex: 1;
+    margin: 50px;
+    word-break:initial;
+}
+
+p{
+    flex:3;
+    word-break:initial;
+
+}
