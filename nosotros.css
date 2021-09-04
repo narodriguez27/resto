@@ -1,4 +1,5 @@
 .titulo-banner{
+
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -14,25 +15,18 @@
     text-align: center;
     padding: 5px;
 }
-.cards-nosotros-1{
+.cards-nosotros-1,
+.cards-nosotros-3{
     display: flex;
     justify-content: center;
     flex-direction: row;
     margin: 10px 0;
     background: rgba(0, 0, 0, 0.119);
 }
-
 .cards-nosotros-2{
     display: flex;
     justify-content: center;
     flex-direction: row-reverse;
-    background: rgba(0, 0, 0, 0.119);
-}
-
-.cards-nosotros-3{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
     margin: 10px 0;
     background: rgba(0, 0, 0, 0.119);
 }
@@ -42,16 +36,83 @@
    text-align: center;
    flex-direction: column;
    word-break:initial;
+   width: 50%;
+   margin: 5px 10px;
 }
 
-h3{
-    flex: 1;
-    margin: 50px;
+.texto2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
     word-break:initial;
+    width: 50%;
+    margin: 5px 10px;
+ }
+
+ .texto3{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    word-break:initial;
+    width: 50%;
+    margin: 5px 10px;
+ }
+
+article .cards-nosotros-1,
+.cards-nosotros-2,
+.cards-nosotros-3{
+    display: flex;
 }
 
-p{
-    flex:3;
-    word-break:initial;
 
+.cards-nosotros-img{
+    width: 550px;
+    height: 367px;
+}
+
+.card-nosotros h3{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.flex-h3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-h3{
+    margin-top: 10px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px groove blue;
+}
+
+.flex-maps-ubicacion{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px 0;
+
+}
+.tenedor-logo{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.212);
+    box-shadow: 10px 1px 14px #4e3f3fdb;
+}
+
+.map-map{
+    border: 3px solid rgba(0, 0, 0, 0.219);
+    transition: .8s;
+}
+
+.map-map:hover{
+    border: 3px solid rgba(209, 89, 9, 0.671);
+    transition: .8s;
 }

@@ -3,7 +3,7 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 1em;
+    gap: 3em;
     padding-bottom: 10px;
 }
 
@@ -46,6 +46,7 @@
     font-size: 1em;
     text-align: center;
     text-overflow: ellipsis;
+    margin: 0 3px;
     
 }
 
