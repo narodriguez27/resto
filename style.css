@@ -19,15 +19,12 @@ body{
     height: 60px;
     padding: 20px 0;
 }
-
 img.tenedor{
     width: 50px;
 }
-
 img.lupa{
     width: 20px;
 }
-
 a{
     text-decoration: none;
     color: black;
@@ -45,7 +42,6 @@ ul.nav-menu{
     flex: 1;
     margin-left: 20px;
 }
-
 .cabeza {
     width: 100%;
     height: 300px;
@@ -61,11 +57,9 @@ ul.nav-menu{
     text-shadow: 4px 4px 3px black;
     margin-bottom: 10px
 }
-
 .btn{
     display: flex;
 }
-
 .btn-btn{
     padding: 10px;
     margin: 10px;
@@ -75,19 +69,14 @@ ul.nav-menu{
     border-radius: 10px;
     text-transform: uppercase;
 }
-
 .btn-btn:hover{
     opacity: 0.9;
 }
-
-
 .cards{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-   
 }
-
 .card{
     display: flex;
     flex-direction: column;
@@ -121,7 +110,6 @@ img.img-recetas{
   width: 100%;
   height: 200px;
 }
-
 .card h2{
     font-size: 13px;
     text-transform: uppercase;
@@ -131,7 +119,6 @@ img.img-recetas{
  display: block;
  text-align: end;
 }
-
 hr{
     padding: 3px 0;
     border: 0;
@@ -143,7 +130,6 @@ hr{
     display: flex;
     justify-content: space-evenly;
 }
-
 .flex_footer-social{
     display: flex;
     flex-direction: column;
@@ -168,27 +154,158 @@ li{
 .a{
     padding: 2px 0;
 }
-
 .banner-nov{
     width: 100%;
     height: 300px;
 } 
-
 .flex_banner{
     display: flex;
     align-items: center;
     padding-bottom: 2px;
 }
-
 .position{
     display: flex;
     position: absolute;
     flex-direction: column;
     width: 90%;
 }
+@media screen and (max-width:767px){
+    
+    .nav_main{
+        display: flex;
+        background-color: #ff0000b3;
+        flex-direction: column-reverse;
+        align-items: stretch;
+        height: 500px;
+        width: 50%;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        display: none;
+    }
+    .tenedor{
+        width: 150px;
+        border-radius: 50%;
+        border: 1px solid black;
+        background: #e91e63a8;
+    }
+    img.tenedor{
+        width: 175px;
+        margin-bottom: 40px;
+    }
+    .lupa{
+        display: none;
+    }
+    .nav_main ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-@media (min-width:320px) {
+    .nav_main a{
+        font-size: 30px;
+        padding: 0;
+        margin: 0;
+    } 
+    
+    .cabeza {
+        width: 100%;
+        height: 122px;
+        background-image: url(img/s.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        font-size: 15px;
+        text-shadow: 4px 4px 3px black;
+        border-radius: -29px;
+        margin-top: 15px;
+        text-align: center;
+     } 
+    header p{
+        display: none;
+    }
 
+    header h2{
+            font-size: 30px;
+            text-transform: uppercase;
+            text-shadow: 4px 4px 3px black;
+            margin: 0;
+    }
+
+    .btn{
+        display: none;
+    }
+
+    .hr-nav{
+        display: none;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    img.img-recetas{
+        width: 100%;
+        height: 100%;
+    }
+    .card h2{
+        font-size:20px;
+        text-align: center;
+    }
+    .descripcion{
+        font-size: 20px;
+    }
+
+    .btn-seguir-leyendo {
+        background: #ff0000c9;
+        color: white;
+        padding: 5px 5px;
+        align-items: center;
+    }
+
+    .position{
+        display: none;
+    }
+    .flex_footer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .flex_footer-social {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        padding: 5px;
+        font-size: 20px;
+        align-items: center;
+    }
+        li {
+            display: flex;
+            flex-direction: column;
+            font-size: 13px;
+            align-items: center;
+        }
+
+       .flex_footer-social a{
+           font-size: 15px;
+       }
+        .logof{
+        width: 50px;
+        height: 50px;
+        }
+        .flex_footer-social p {
+            font-size: 15px;
+            text-align: center;
+            }
+}
+ @media screen and (min-width:768px) and (max-width: 1023px){
+    
         .nav_main{
             display: flex;
             background-color: #ff0000b3;
@@ -203,8 +320,8 @@ li{
         .tenedor{
             width: 150px;
             border-radius: 50%;
-            /* border: 1px solid black; */
-            margin: 0 auto;
+            border: 1px solid black;
+
             background: #e91e63a8;
         }
         img.tenedor{
@@ -228,29 +345,27 @@ li{
         
         .cabeza {
             width: 100%;
-            height: 300px;
+            height: 122px;
             background-image: url(img/s.jpg);
             background-size: cover;
             display: flex;
             flex-direction: column;
-            justify-content: flex-end;
-            align-items: center;
             color: white;
-            font-size: 20px;
+            font-size: 15px;
             text-shadow: 4px 4px 3px black;
-            border-radius: 50px;
+            border-radius: -29px;
             margin-top: 15px;
-
-        }
+            text-align: center;
+         } 
         header p{
             display: none;
         }
 
         header h2{
-             font-size: 60px;
-            text-transform: uppercase;
-            text-shadow: 4px 4px 3px black;
-            margin: 55px auto;
+                font-size: 30px;
+                text-transform: uppercase;
+                text-shadow: 4px 4px 3px black;
+                margin: 0;
         }
 
         .btn{
@@ -279,13 +394,10 @@ li{
         }
 
         .btn-seguir-leyendo {
-            margin-top: auto;
-            margin-left: auto;
-            margin-bottom: 20px;
             background: #ff0000c9;
             color: white;
             padding: 5px 5px;
-            border-radius: 10px;
+            align-items: center;
         }
 
         .position{
@@ -317,114 +429,282 @@ li{
             }
 
            .flex_footer-social a{
-               font-size: 30px;
+               font-size: 15px;
            }
-           .logof{
-               width: 50px;
-               height: 50px;
-           }
-           .flex_footer-social p {
-               font-size: 30px;
-           }
+            .logof{
+            width: 50px;
+            height: 50px;
+            }
+            .flex_footer-social p {
+                font-size: 15px;
+                text-align: center;
+                }
+} 
+ /* @media screen and (min-width:375px){
+    
+    .nav_main{
+        display: flex;
+        background-color: #ff0000b3;
+        flex-direction: column-reverse;
+        align-items: stretch;
+        height: 500px;
+        width: 50%;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        display: none;
+    }
+    .tenedor{
+        width: 150px;
+        border-radius: 50%;
+        border: 1px solid black;
+        background: #e91e63a8;
+    }
+    img.tenedor{
+        width: 175px;
+        margin-bottom: 40px;
+    }
+    .lupa{
+        display: none;
+    }
+    .nav_main ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-
-     /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
-@media (min-width:480px) {
-        body{
-            background-color: red;
-        }
-     /* smartphones, Android phones, landscape iPhone */ }
-@media (min-width:600px) {
-        body{
-            background-color: blue;
-        }
-     /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
-@media (min-width:801px) { 
-        body{
-            background-color: yellow;
-        }
-    /* tablet, landscape iPad, lo-res laptops ands desktops */ }
-@media (min-width:1025px) { 
-        body{
-            background-color: green
-        }
-    /* big landscape tablets, laptops, and desktops */ }
-@media (min-width:1281px) {
-        body{
-            background-color: sienna;
-        }
-     /* hi-res laptops and desktops */ }
-
-/* @media (max-width: 400px){
-   .cards{
-       display: flex;
-       flex-wrap: wrap;
-       flex-direction: column;
-}
-   img.img-recetas{ 
-       width: 100%;
-       height: 300px;
-   }
-   .flex_footer{
-    display: flex;
-    flex-direction: column;
+    .nav_main a{
+        font-size: 30px;
+        padding: 0;
+        margin: 0;
+    } 
     
-}
+    .cabeza {
+        width: 100%;
+        height: 122px;
+        background-image: url(img/s.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        font-size: 15px;
+        text-shadow: 4px 4px 3px black;
+        border-radius: -29px;
+        margin-top: 15px;
+        text-align: center;
+     } 
+    header p{
+        display: none;
+    }
 
-.flex_footer-social{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    
-}
-.flex_footer-social img{
-    margin: 1px;
-}
-.flex_footer-social a{
-    margin: 2px;
-}
-li{
-    display: flex;
-    flex-direction: column;  
-    font-size: 13px;    
-    align-items: center;
-}
-}
-  @media (max-width: 800px){
+    header h2{
+            font-size: 30px;
+            text-transform: uppercase;
+            text-shadow: 4px 4px 3px black;
+            margin: 0;
+    }
+
+    .btn{
+        display: none;
+    }
+
+    .hr-nav{
+        display: none;
+    }
 
     .cards{
         display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
- }
-  img.img-recetas {
-      width: 100%;
-      height: 50%;
-      margin: 3px;
+        flex-wrap: nowrap;
     }
-    .descripcion,
-    .btn-seguir-leyendo{
-        font-size: 15px;
+    img.img-recetas{
+        width: 100%;
+        height: 100%;
     }
- }
+    .card h2{
+        font-size:20px;
+        text-align: center;
+    }
+    .descripcion{
+        font-size: 20px;
+    }
 
- @media (max-width: 900px){
+    .btn-seguir-leyendo {
+        background: #ff0000c9;
+        color: white;
+        padding: 5px 5px;
+        align-items: center;
+    }
+
+    .position{
+        display: none;
+    }
+    .flex_footer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .flex_footer-social {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        padding: 5px;
+        font-size: 20px;
+        align-items: center;
+    }
+        li {
+            display: flex;
+            flex-direction: column;
+            font-size: 13px;
+            align-items: center;
+        }
+
+       .flex_footer-social a{
+           font-size: 15px;
+       }
+.logof{
+width: 50px;
+height: 50px;
+}
+.flex_footer-social p {
+ font-size: 15px;
+ text-align: center;
+ }
+} */
+/* @media screen and (min-width:1024px){ 
+    .nav_main{
+        display: flex;
+        background-color: #ff0000b3;
+        flex-direction: column-reverse;
+        align-items: stretch;
+        height: 500px;
+        width: 50%;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        display: none;
+    }
+    .tenedor{
+        width: 150px;
+        border-radius: 50%;
+        border: 1px solid black;
+        background: #e91e63a8;
+    }
+    img.tenedor{
+        width: 175px;
+        margin-bottom: 40px;
+    }
+    .lupa{
+        display: none;
+    }
+    .nav_main ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav_main a{
+        font-size: 30px;
+        padding: 0;
+        margin: 0;
+    } 
+    
+    .cabeza {
+        width: 100%;
+        height: 122px;
+        background-image: url(img/s.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        font-size: 15px;
+        text-shadow: 4px 4px 3px black;
+        border-radius: -29px;
+        margin-top: 15px;
+        text-align: center;
+     } 
+    header p{
+        display: none;
+    }
+
+    header h2{
+            font-size: 30px;
+            text-transform: uppercase;
+            text-shadow: 4px 4px 3px black;
+            margin: 0;
+    }
+
+    .btn{
+        display: none;
+    }
+
+    .hr-nav{
+        display: none;
+    }
 
     .cards{
         display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
- }
-  img.img-recetas {
-      width: 100%;
-      height: 50%;
-      margin: 3px;
+        flex-wrap: nowrap;
     }
-    .descripcion,
-    .btn-seguir-leyendo{
-        font-size: 15px;
+    img.img-recetas{
+        width: 100%;
+        height: 100%;
     }
- } */
+    .card h2{
+        font-size:30px;
+        text-align: center;
+    }
+    .descripcion{
+        font-size: 30px;
+    }
+
+    .btn-seguir-leyendo {
+        background: #ff0000c9;
+        color: white;
+        padding: 5px 5px;
+        align-items: center;
+    }
+
+    .position{
+        display: none;
+    }
+    .flex_footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .flex_footer-social{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+    .flex_footer-social img{
+        margin: 1px;
+    }
+    .flex_footer-social a{
+        margin: 2px;
+        font-size: 25px;
+    }
+    li{
+        display: flex;
+        flex-direction: row;     
+        align-items: center;
+    }
+    .logof{
+        width: 30px;
+        height: 30px;
+    }
+    .a{
+        padding: 2px 0;
+    }
+    .flex_footer-social p {
+        font-size: 25px;
+    }
+    
+} */
