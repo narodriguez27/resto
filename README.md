@@ -1,2 +1,2 @@
 # resto
-pagina web de restorand
+pagina web de restaurant
