@@ -60,13 +60,6 @@
     margin: 5px 10px;
  }
 
-article .cards-nosotros-1,
-.cards-nosotros-2,
-.cards-nosotros-3{
-    display: flex;
-}
-
-
 .cards-nosotros-img{
     width: 550px;
     height: 367px;
@@ -116,4 +109,140 @@ article .cards-nosotros-1,
 .map-map:hover{
     border: 3px solid rgba(209, 89, 9, 0.671);
     transition: .8s;
+}
+
+@media screen and (max-width:767px){
+   
+.header-nosotros{
+    width: 100%;
+}
+.banner-nosotros {
+    width: 90%;
+   
+}
+.titulo-banner-h2{
+    text-transform: uppercase;
+    text-shadow: 1px 1px 11px black;
+}
+.titulo-banner-p {
+    text-align: start;
+    padding: 5px;
+    font-size: 25px;
+}
+.cards-nosotros-1,
+.cards-nosotros-2,
+.cards-nosotros-3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 0;
+    background: rgba(0, 0, 0, 0.119);
+    align-items: center;
+    align-content: center;
+    border-radius: 20px;
+}
+
+.cards-nosotros-img {
+    width: 100%;
+    height: 300px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.texto,
+.texto2,
+.texto3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding:2px;
+    font-size:25px;
+}
+.flex-h3 h3{
+    font-size: 30px;
+}
+ .map-map{
+     display: none;
+ }
+
+ .tenedor-logo {
+    width: 250px;
+    height: 250px;
+}
+}
+ @media screen and (min-width:768px) and (max-width: 1024px){
+    
+    .banner-nosotros {
+        width: 100%;
+    }
+    .titulo-banner-h2, .titulo-banner-p {
+        text-align: center;
+        padding: 5px;
+        font-size: 50px;
+    }
+    .titulo-banner-p{
+        text-align: start;
+    }
+    .cards-nosotros-1,
+    .cards-nosotros-2,
+    .cards-nosotros-3 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 10px 0;
+        background: rgba(0, 0, 0, 0.119);
+        align-items: center;
+    }
+    .card-nosotros h3 {
+        text-align: center;
+        padding-top: 25px;
+        font-size: 50px;
+} 
+.texto,
+.texto2,
+.texto3{
+    width: 100%;
+}
+.texto p,
+.texto2 p,
+.texto3 p{
+    font-size: 50px;
+    text-align: start;
+    margin-left: 30px;
+}
+
+.cards-nosotros-img {
+    width: 100%;
+    height: 600px;
+}
+
+.map-map{
+    display: none;
+}
+.flex_footer {
+    display: flex;
+    flex-direction: column;
+}
+.flex_footer-social {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.flex_footer-social a{
+    font-size: 40px;
+}
+.flex_footer-social h2{
+    font-size: 35px;
+}
+.logof {
+    width: 50px;
+    height: 50px;
+}   
+.a p{
+    font-size: 39px;
+    padding: 0 0 0 10px;
+}
 }
