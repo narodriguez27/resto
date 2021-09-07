@@ -62,6 +62,8 @@
     background: #ac13139c;
     transition: 0.3s;
     color: cornsilk;
+    cursor:pointer;
+
 }
 
 @media screen and (max-width:767px){

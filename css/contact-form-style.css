@@ -1,3 +1,4 @@
+
  .flex__contact{
      padding-top: 60px;
      padding-bottom: 60px;
@@ -14,6 +15,7 @@
      border-radius: 15px;
      padding: 10px;
      box-shadow: 1px 0px 11px black;
+     
  }
 label{
     display: block;
@@ -34,7 +36,7 @@ button{
 }
 button:hover{
     background-color: rgba(0, 0, 0, 0.356);
-    
+    cursor:pointer;
 }
 textarea{
     resize: none;
@@ -42,4 +44,3 @@ textarea{
     outline: none;
     
 }
-
