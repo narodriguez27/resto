@@ -5,6 +5,7 @@
      display: flex;
      justify-content: center;
      min-height: calc(100vh - 70px);
+     width: 90%;
  }
  .flex__contact-form{
      display: flex;

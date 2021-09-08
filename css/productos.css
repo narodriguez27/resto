@@ -1,4 +1,7 @@
 
+.as{
+    min-height: calc(100vh - 200px);
+}
 .card-productos{
     margin: 0 auto;
     display: grid;
@@ -21,7 +24,7 @@
     flex-direction: column; 
     height: 300px;
     box-shadow: 2px 5px 20px #e91e63;
-    background: #9c27b04d;
+    background: #e1aaeb25;
     border-radius: 20px;
 }
 .cards-img{
@@ -48,9 +51,9 @@
     margin-top: 10px;
     width: 50%;
     padding: 3px 0;
-    background: #14130434;
+    background: #38383185;
     border-radius: 10px;
-    border-color: rgba(199, 176, 147, 0.61);
+    border-color: rgba(213, 204, 194, 0.919);
     transition: 0.3s;
 
 }
@@ -59,9 +62,9 @@
     transition: 0.5s;
 }
 .btn-buy:hover{
-    background: #ac13139c;
+    background: #c5676762;
     transition: 0.3s;
-    color: cornsilk;
+    color: rgb(34, 28, 4);
     cursor:pointer;
 
 }
