@@ -13,15 +13,13 @@ body{
 .contenedor{
     width: 90%;
     margin: 0 auto; 
-    max-height: calc(1000vh - 70px);
-   overflow: scroll;
-   
+    min-height: calc(100vh - 70px);
 }
 .nav_main{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 10px;
+    margin-top: 10px;
     
  }
 
@@ -70,6 +68,7 @@ body{
 a{
     text-decoration: none;
     color: black;
+    font-size: 1em;
 }
 li{
     list-style: none;
@@ -166,28 +165,9 @@ hr{
     margin: 10px;
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-}
-.footer_footer{
-    height: 180px;
-    display: flex;
-    justify-content: space-evenly;
     width: 90%;
-    margin: 0 auto;
-    
 }
-.flex_footer-social a{
-    display: flex;
-    align-items: center;
-    margin: 3px;
-}
-.flex_footer-social h2{
-    text-transform: uppercase;
-    font-size: 20px;
-}
-.flex_footer-social-img{
-    width: 30px;
-    height: 30px;
-}
+
 .flex__p{
     display: flex;
     align-items: center;
@@ -225,239 +205,38 @@ hr{
 .flex_novedades_link:hover{
     color: rgba(245, 245, 245, 0.892);
 }
-@media screen and (max-width:767px){
-    
-    .nav_main{
-        display: flex;
-        background-color: #ff0000b3;
-        flex-direction: column-reverse;
-        align-items: stretch;
-        height: 500px;
-        width: 50%;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-        display: none;
-    }
-    .nav_main ul {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
 
-    .nav_main a{
-        font-size: 30px;
-        padding: 0;
-        margin: 0;
-    } 
-    
-    .cabeza {
-        width: 100%;
-        height: 122px;
-        background-image: url(../assets/img/s.jpg);
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        color: white;
-        font-size: 15px;
-        text-shadow: 4px 4px 3px black;
-        border-radius: -29px;
-        margin-top: 15px;
-        text-align: center;
-     }
-    .descriptio-p{
-        display: none;
-    }
-    .btn{
-        display: none;
-    }
-
-    .hr-nav{
-        display: none;
-    }
-    .cards{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
-    img.img-recetas{
-        width: 100%;
-        height: 100%;
-    }
-    .card h2{
-        font-size:20px;
-        text-align: center;
-    }
-    .descripcion{
-        font-size: 20px;
-    }
-    .flex_banner_noveades_img {
-        width: 300px;
-        height: 180px;
-        object-fit: cover;
-    }
-    .flex_novedades p {
-        text-transform: uppercase;
-        font-size: 20px;
-        text-align: center;
-        margin-top: 5px;
-    }
-    .flex_banner {
-        display: flex;
-        flex-direction: column;
-    }
-    .btn-seguir-leyendo {
-        background: #ff0000c9;
-        color: white;
-        padding: 5px 5px;
-        align-items: center;
-    }
-    .flex_footer {
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-    }
-    .flex_footer-social {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .flex_footer-social-2{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .flex_footer-social-img{
-        width: 30px;
-        height: 30px;
-    }
-
-    .flex_footer-social a {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
- 
+.footer_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 90%;
 }
- @media screen and (min-width:768px) and (max-width: 1023px){
+.footer_footer h2 {
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+.flex_footer-social-img{
+    width: 20px;
+    height: 20px;
     
-        .nav_main{
-            display: flex;
-            background-color: #ff0000b3;
-            flex-direction: column-reverse;
-            align-items: stretch;
-            height: 500px;
-            width: 50%;
-            border-bottom-left-radius: 20px;
-            border-bottom-right-radius: 20px;
-            display: none;
-        }    
-        .nav_main ul {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-        }
-
-        .nav_main a{
-            font-size: 30px;
-            padding: 0;
-            margin: 0;
-        } 
-        
-        .cabeza {
-            width: 100%;
-            height: 122px;
-            background-image: url(../assets/img/s.jpg);
-            background-size: cover;
-            display: flex;
-            flex-direction: column;
-            color: white;
-            font-size: 15px;
-            text-shadow: 4px 4px 3px black;
-            border-radius: -29px;
-            margin-top: 15px;
-            text-align: center;
-         } 
-        header p{
-            display: none;
-        }
-
-        header h2{
-                font-size: 30px;
-                text-transform: uppercase;
-                text-shadow: 4px 4px 3px black;
-                margin: 0;
-        }
-
-        .btn{
-            display: none;
-        }
-
-        .hr-nav{
-            display: none;
-        }
-
-        .cards{
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-        }
-        img.img-recetas{
-            width: 100%;
-            height: 100%;
-        }
-        .card h2{
-            font-size:20px;
-            text-align: center;
-        }
-        .descripcion{
-            font-size: 20px;
-        }
-
-        .btn-seguir-leyendo {
-            background: #ff0000c9;
-            color: white;
-            padding: 5px 5px;
-            align-items: center;
-        }
-
-        .position{
-            display: none;
-        }
-        .flex_footer {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            align-content: center;
-            align-items: center;
-            justify-content: center;
-           
-        }
-        .flex_footer-social {
-            display: flex;
-            flex-direction: column;
-            align-content: center;
-            justify-content: center;
-            padding: 5px;
-            font-size: 20px;
-            align-items: center;
-        }
-            li {
-                display: flex;
-                flex-direction: column;
-                font-size: 13px;
-                align-items: center;
-            }
-
-           .flex_footer-social a{
-               font-size: 15px;
-           }
-            .logof{
-            width: 50px;
-            height: 50px;
-            }
-            .flex_footer-social p {
-                font-size: 15px;
-                text-align: center;
-                }
-} 
+}
+.flex_footer-social{
+    display: flex;
+    flex-direction: column;
+}
+.a{
+    display: flex;
+    
+}
+.flex_footer-social p {
+    margin-left: 5px;
+}
+.flex_footer-social-2{
+    display: flex;
+    flex-direction: column;
+}
+.flex_footer-social-3{
+    display: flex;
+    flex-direction: column;
+}
