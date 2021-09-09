@@ -147,7 +147,6 @@ p.descriptio-p {
 }
 img.img-recetas{
   width: 100%;
-  height: 200px;
 }
 .card h2{
     font-size: 13px;
@@ -281,6 +280,10 @@ and (orientation: portrait) {
     .descripcion{
         font-size: 25px;
     }
+    .img-recetas{
+        width: 100%;
+    }
+
     .btn-seguir-leyendo{
         border: 1px solid rgba(255, 0, 0, 0.275);
         padding: 20px 20px;
@@ -334,4 +337,102 @@ and (orientation: portrait) {
     .b p {
         font-size: 1em;
     }
+}
+@media screen
+
+and (device-width: 360px)
+
+and (device-height: 640px)
+
+and (-webkit-device-pixel-ratio: 3)
+
+and (orientation: portrait) {
+    .contenedor{
+        width: 100%;
+    }
+    .nav_main{
+        display: none;
+    }
+    .cabeza{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin: 0 auto;
+        
+    }
+    .btn{
+        display: none;
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .contenedor-titulo h2{
+        font-size: 20px;
+    }
+    .descripcion{
+        font-size: 25px;
+    }
+    img.img-recetas{
+        width: 100%;
+    }
+    .btn-seguir-leyendo{
+        border: 1px solid rgba(255, 0, 0, 0.275);
+        padding: 20px 20px;
+        background-color:rgba(255, 0, 0, 0.556);
+        border-radius: 10px;
+        color: rgba(31, 19, 2, 0.789);
+    }
+    .flex_banner{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex_banner_noveades_img{
+        width: 340px;
+        border-radius: 25px;
+        margin: 0 auto;
+    }
+    .flex_novedades p {
+        margin-top: 15px;
+    }
+
+
+    .footer_footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .flex_footer-social{
+        display: flex;
+        align-items: center;
+    }
+    .a{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .flex_footer-social-2{
+        display: flex;
+        align-items: center;
+    }
+    .flex_footer-social-3{
+        display: flex;
+        align-items: center;
+    }
+    .flex_footer-social-img{
+        width: 30px;
+        height: auto;
+    }
+    .a{
+        font-size: 1em;
+    }
+    .b p {
+        font-size: 1em;
+    }
+
 }
