@@ -1,13 +1,11 @@
 
-.as{
-    min-height: calc(100vh - 200px);
-}
 .card-productos{
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 3em;
     padding-bottom: 10px;
+    width: 90%;
 }
 .cards-productos1,
 .cards-productos2,

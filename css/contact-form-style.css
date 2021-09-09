@@ -1,18 +1,15 @@
-
  .flex__contact{
-     padding-top: 60px;
-     padding-bottom: 60px;
-     display: flex;
-     justify-content: center;
-     min-height: calc(100vh - 70px);
-     width: 90%;
+        display: flex;
+        width: 300px;
+        height: 400px;
+        margin: 40px auto;
  }
  .flex__contact-form{
      display: flex;
      flex-direction: column;
      align-items: center;
      justify-content: center;
-     width: 50%;
+     width: 450px;
      background-color: rgba(0, 0, 0, 0.101);
      border-radius: 15px;
      box-shadow: 1px 0px 11px black;
@@ -50,3 +47,127 @@ textarea{
     min-width: 250px;
     min-height:50px;
 }
+
+/* @media only screen and (max-width:600px){
+  
+    .flex__contact{
+        width: 100%;
+        background: blue;
+        
+    }
+    .flex__contact-form{
+        width: 100%;
+    }
+
+    .flex__label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    label{
+        font-size: 25px;
+        text-align: start;
+        display: inline;
+        margin-right: 0;
+    }
+    input{
+        height: 35px;
+        width: 90%;
+        font-size: 30px;
+    }
+    textarea{
+        min-width:290px;
+        min-height: 100px;
+        font-size: 30px;
+    }
+
+}
+
+
+@media screen and (max-width:767px){
+    
+    .flex__contact{
+        width: 100%;
+        background: black;
+    }
+    .flex__contact-form{
+        width: 100%;
+    }
+
+    .flex__label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    label{
+        font-size: 25px;
+        text-align: start;
+        display: inline;
+        margin-right: 0;
+    }
+    input{
+        height: 35px;
+        width: 90%;
+        font-size: 30px;
+    }
+    textarea{
+        min-width:290px;
+        min-height: 100px;
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width: 1023px){
+    .flex__contact{
+        width: 100%;
+    }
+    .flex__contact-form{
+        width: 100%;
+    }
+
+    .flex__label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    label{
+        font-size: 40px;
+        text-align: start;
+        display: inline;
+        margin-right: 0;
+        padding: 10px;
+    }
+    input{
+        height: 45px;
+        width: 90%;
+        font-size: 35px;
+    }
+    textarea{
+        min-width:400px;
+        min-height: 130px;
+        font-size: 35px;
+    }
+    button{
+        margin: 28px;
+        padding: 25px 100px;
+        font-size:35px;
+    }
+    .flex_footer-social a {
+        flex-direction: column;
+        
+    }
+    .flex_footer-social-responsive{
+        font-size: 25px !important;
+    }
+    .flex_footer-social p {
+        font-size: 25px !important;
+    }
+    .flex_footer-social h2 {
+        font-size: 30px !important;
+    }
+
+} */
