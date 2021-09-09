@@ -240,3 +240,98 @@ hr{
     display: flex;
     flex-direction: column;
 }
+
+@media only screen
+
+and (min-device-width: 375px)
+
+and (max-device-width: 667px)
+
+and (-webkit-min-device-pixel-ratio: 2)
+
+and (orientation: portrait) {
+    .contenedor{
+        width: 100%;
+        margin: 0 auto;
+        margin-right: 10px;
+    }
+    .nav_main{
+        display: none;
+    }
+    .cabeza{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .btn{
+        display: none;
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .contenedor-titulo h2{
+        font-size: 20px;
+    }
+    .descripcion{
+        font-size: 25px;
+    }
+    .btn-seguir-leyendo{
+        border: 1px solid rgba(255, 0, 0, 0.275);
+        padding: 20px 20px;
+        background-color:rgba(255, 0, 0, 0.556);
+        border-radius: 10px;
+        color: rgba(31, 19, 2, 0.789);
+    }
+    .flex_banner{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex_banner_noveades_img{
+        width: 390px;
+        border-radius: 25px;
+        margin: 0 auto;
+    }
+    .flex_novedades p {
+        margin-top: 15px;
+    }
+
+
+    .footer_footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .flex_footer-social{
+        display: flex;
+        align-items: center;
+    }
+    .a{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .flex_footer-social-2{
+        display: flex;
+        align-items: center;
+    }
+    .flex_footer-social-3{
+        display: flex;
+        align-items: center;
+    }
+    .flex_footer-social-img{
+        width: 30px;
+        height: auto;
+    }
+    .a{
+        font-size: 1em;
+    }
+    .b p {
+        font-size: 1em;
+    }
+}
