@@ -1,23 +1,33 @@
  .flex__contact{
-        display: flex;
-        width: 300px;
-        height: 400px;
-        margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.101);
+    border-radius: 15px;
+    box-shadow: 1px 0px 11px black;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 80%;
  }
  .flex__contact-form{
      display: flex;
-     flex-direction: column;
+     flex-direction: row;
      align-items: center;
      justify-content: center;
-     width: 450px;
-     background-color: rgba(0, 0, 0, 0.101);
-     border-radius: 15px;
-     box-shadow: 1px 0px 11px black;
+     width: 100%;
+    
      
  }
+ .flex__label{
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     width: 50%;
+     margin-top: 20px;
+ }
 label{
-    display: block;
-    margin-right: 115px;
+    margin-top: 10px;
+    font-size: 1.3em;
 }
 input{
     padding: 2px;
@@ -26,6 +36,16 @@ input{
     width: 250px;
     height: 25px;
 }
+.hr-email{
+    height: 300px;
+    border-left: 1px solid rgba(0, 0, 0, 0.439);
+}
+.fa-envelope{
+    font-size: 10rem;
+    margin: 0 auto;
+    margin-left: 50%;
+    margin-top: 50%;
+}
 button{
     margin: 10px;
     padding: 10px 100px;
@@ -33,6 +53,14 @@ button{
     background-color: rgba(0, 0, 0, 0.256);
     border-radius: 10px;
     border-color: rgba(199, 176, 147, 0.61);
+    font-size: 1.4em;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.fa-paper-plane{
+    font-size: 1em;
+    margin-left: 10px;
 }
 button:hover{
     background-color: rgba(0, 0, 0, 0.356);
@@ -48,126 +76,390 @@ textarea{
     min-height:50px;
 }
 
-/* @media only screen and (max-width:600px){
-  
-    .flex__contact{
-        width: 100%;
-        background: blue;
-        
-    }
-    .flex__contact-form{
-        width: 100%;
-    }
+/* RESPONSIVE MOBILE */
 
-    .flex__label {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    label{
-        font-size: 25px;
-        text-align: start;
-        display: inline;
-        margin-right: 0;
-    }
-    input{
-        height: 35px;
-        width: 90%;
-        font-size: 30px;
-    }
-    textarea{
-        min-width:290px;
-        min-height: 100px;
-        font-size: 30px;
-    }
-
+@media screen and (min-width: 0px)
+and (max-width: 300px){
+.nav_main{
+    justify-content: center;
+    align-items: center;
+}
+.nav_main ul {
+    justify-content: center;
+}
+.nav-menu-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.nav-menu-menu li {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
+.nav-menu-menu a{
+    font-size: 20px;
+    background-color: rgba(255, 0, 0, 0.563);
+    padding: 10px;
+    border-radius: 10px;
+    color: rgba(245, 245, 245, 0.796);
+}
+i.fa-home{
+    display: none;
+}
+.search__flex{
+      display: none;
+  }
+.flex__contact-form{
+    width: 80%;
+}
+.flex__label{
+    width: 90%;
+    height: ;
+}
+.flex__contact-form{
+    flex-direction: column-reverse;
+}
+.hr-email{
+    border: none;
+    margin: 0 auto;
+    height: 150px;
+}
+.fa-envelope{
+    margin: 0 auto;
+}
+.flex__label{
+    align-items: center;
+}
+label{
+    margin: 8px;
+}
+input{
+    width: 100%;
+    font-size: 1.2em;
+}
+textarea{
+    max-width: 150px;
+    max-height: 50px;
+    min-width: 125px;
+    min-height: 100px
+}
 
-@media screen and (max-width:767px){
+button{
+    padding: 10px 10px;
+}
+.footer_footer{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 80%;
+}
+}
+@media screen
+and (min-width: 300px)
+and (max-width: 414px){
+    .nav_main{
+        justify-content: center;
+        align-items: center;
+    }
+    .nav_main ul {
+        justify-content: center;
+    }
+    .nav-menu-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-menu-menu li {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
     
-    .flex__contact{
-        width: 100%;
-        background: black;
-    }
-    .flex__contact-form{
-        width: 100%;
-    }
-
-    .flex__label {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    label{
-        font-size: 25px;
-        text-align: start;
-        display: inline;
-        margin-right: 0;
-    }
-    input{
-        height: 35px;
-        width: 90%;
-        font-size: 30px;
-    }
-    textarea{
-        min-width:290px;
-        min-height: 100px;
-        font-size: 30px;
-    }
-
-}
-
-@media screen and (min-width:768px) and (max-width: 1023px){
-    .flex__contact{
-        width: 100%;
-    }
-    .flex__contact-form{
-        width: 100%;
-    }
-
-    .flex__label {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    label{
-        font-size: 40px;
-        text-align: start;
-        display: inline;
-        margin-right: 0;
+    .nav-menu-menu a{
+        font-size: 20px;
+        background-color: rgba(255, 0, 0, 0.563);
         padding: 10px;
+        border-radius: 10px;
+        color: rgba(245, 245, 245, 0.796);
     }
-    input{
-        height: 45px;
+    i.fa-home{
+        display: none;
+    }
+    .search__flex{
+          display: none;
+      }
+    .flex__contact{
+        width: 100%;
+    }
+    .flex__contact-form{
+        width: 100%;
+    }
+    .flex__label{
         width: 90%;
-        font-size: 35px;
+
     }
-    textarea{
-        min-width:400px;
-        min-height: 130px;
-        font-size: 35px;
+    .flex__contact-form{
+        flex-direction: column-reverse;
     }
-    button{
-        margin: 28px;
-        padding: 25px 100px;
-        font-size:35px;
+    .hr-email{
+        border: none;
+        margin: 0 auto;
+        height: 150px;
     }
-    .flex_footer-social a {
-        flex-direction: column;
+    .fa-envelope{
+        margin: 0 auto;
+        color: rgba(255, 127, 80, 0.775);
+    }
+    .flex__label{
+        align-items: center;
+    }
+    label{
+        margin: 8px;
         
     }
-    .flex_footer-social-responsive{
-        font-size: 25px !important;
+    input{
+        width: 100%;
+        font-size: 1.2em;
+        height: 35px;
     }
-    .flex_footer-social p {
-        font-size: 25px !important;
+    textarea{
+        max-width: 150px;
+        max-height: 50px;
+        min-width: 100%;
+        min-height: 100px
     }
-    .flex_footer-social h2 {
-        font-size: 30px !important;
+    
+    button{
+        padding: 10px 10px;
     }
+    .footer_footer{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        width: 90%;
+    }
+}
+@media screen 
+and (min-width:414px)
+and (max-width: 540px){
+    .nav_main{
+        justify-content: center;
+        align-items: center;
+    }
+    .nav_main ul {
+        justify-content: center;
+    }
+    .nav-menu-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-menu-menu li {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .nav-menu-menu a{
+        font-size: 20px;
+        background-color: rgba(255, 0, 0, 0.563);
+        padding: 10px;
+        border-radius: 10px;
+        color: rgba(245, 245, 245, 0.796);
+    }
+    i.fa-home{
+        display: none;
+    }
+    .search__flex{
+          display: none;
+      }
+    .flex__contact{
+        width: 100%;
+    }
+    .flex__contact-form{
+        width: 100%;
+    }
+    .flex__label{
+        width: 90%;
 
-} */
+    }
+    .flex__contact-form{
+        flex-direction: column-reverse;
+    }
+    .hr-email{
+        border: none;
+        margin: 0 auto;
+        height: 150px;
+    }
+    .fa-envelope{
+        margin: 0 auto;
+        color: rgba(255, 127, 80, 0.775);
+    }
+    .flex__label{
+        align-items: center;
+    }
+    label{
+        margin: 8px;
+        
+    }
+    input{
+        width: 100%;
+        font-size: 1.2em;
+        height: 35px;
+    }
+    textarea{
+        max-width: 150px;
+        max-height: 50px;
+        min-width: 100%;
+        min-height: 100px
+    }
+    
+    button{
+        padding: 10px 10px;
+    }
+    .footer_footer{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        width: 90%;
+    }
+}
+@media screen 
+and (min-width: 541px)
+and (max-width: 767px){
+    .nav_main{
+        justify-content: center;
+        align-items: center;
+    }
+    .nav_main ul {
+        justify-content: center;
+    }
+    .nav-menu-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-menu-menu li {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .nav-menu-menu a{
+        font-size: 20px;
+        background-color: rgba(255, 0, 0, 0.563);
+        padding: 10px;
+        border-radius: 10px;
+        color: rgba(245, 245, 245, 0.796);
+    }
+    i.fa-home{
+        display: none;
+    }
+    .search__flex{
+          display: none;
+      }
+    .flex__contact{
+        width: 100%;
+    }
+    .flex__contact-form{
+        width: 100%;
+    }
+    .flex__label{
+        width: 90%;
+
+    }
+    .flex__contact-form{
+        flex-direction: column-reverse;
+    }
+    .hr-email{
+        border: none;
+        margin: 0 auto;
+        height: 150px;
+    }
+    .fa-envelope{
+        margin: 0 auto;
+        color: rgba(255, 127, 80, 0.775);
+    }
+    .flex__label{
+        align-items: center;
+    }
+    label{
+        margin: 8px;
+        
+    }
+    input{
+        width: 100%;
+        font-size: 1.2em;
+        height: 35px;
+    }
+    textarea{
+        max-width: 150px;
+        max-height: 50px;
+        min-width: 100%;
+        min-height: 100px
+    }
+    
+    button{
+        padding: 10px 10px;
+    }
+    .footer_footer{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        width: 90%;
+    }
+}
+@media screen
+and (min-width: 768px)
+and (max-width: 1024px){
+    .nav-menu-menu {
+        display: flex;
+        flex-direction: row;
+    }
+    .flex__contact{
+        width: 100%;
+    }
+    .flex__contact-form{
+        width: 100%;
+    }
+    .flex__label{
+        width: 90%;
+
+    }
+    .flex__contact-form{
+        flex-direction: column-reverse;
+    }
+    .hr-email{
+        border: none;
+        margin: 0 auto;
+        height: 150px;
+    }
+    .fa-envelope{
+        margin: 0 auto;
+        color: rgba(255, 127, 80, 0.775);
+    }
+    .flex__label{
+        align-items: center;
+    }
+    label{
+        margin: 8px;
+        
+    }
+    input{
+        width: 100%;
+        font-size: 1.2em;
+        height: 35px;
+    }
+    textarea{
+        max-width: 150px;
+        max-height: 50px;
+        min-width: 100%;
+        min-height: 100px
+    }
+    
+    button{
+        padding: 10px 10px;
+    }
+    .footer_footer{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+    }
+}
